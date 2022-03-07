@@ -1,0 +1,378 @@
+Microsoft Windows [Version 10.0.19044.1526]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Program Files\MongoDB\Server\5.0\bin>mongo.exe
+MongoDB shell version v5.0.6
+connecting to: mongodb://127.0.0.1:27017/?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("3323de24-ee56-4367-a310-2de450c39ac8") }
+MongoDB server version: 5.0.6
+================
+Warning: the "mongo" shell has been superseded by "mongosh",
+which delivers improved usability and compatibility.The "mongo" shell has been deprecated and will be removed in
+an upcoming release.
+For installation instructions, see
+https://docs.mongodb.com/mongodb-shell/install/
+================
+Welcome to the MongoDB shell.
+For interactive help, type "help".
+For more comprehensive documentation, see
+        https://docs.mongodb.com/
+Questions? Try the MongoDB Developer Community Forums
+        https://community.mongodb.com
+---
+The server generated these startup warnings when booting:
+        2022-03-07T16:53:27.308+05:30: Access control is not enabled for the database. Read and write access to data and configuration is unrestricted
+---
+---
+        Enable MongoDB's free cloud-based monitoring service, which will then receive and display
+        metrics about your deployment (disk utilization, CPU, operation statistics, etc).
+
+        The monitoring data will be available on a MongoDB website with a unique URL accessible to you
+        and anyone you share the URL with. MongoDB may use this information to make product
+        improvements and to suggest MongoDB products and deployment options to you.
+
+        To enable free monitoring, run the following command: db.enableFreeMonitoring()
+        To permanently disable this reminder, run the following command: db.disableFreeMonitoring()
+---
+> show dbs
+admin   0.000GB
+config  0.000GB
+local   0.000GB
+users   0.000GB
+> use test
+switched to db test
+> db
+test
+> show collection
+uncaught exception: Error: don't know how to show [collection] :
+shellHelper.show@src/mongo/shell/utils.js:1211:11
+shellHelper@src/mongo/shell/utils.js:838:15
+@(shellhelp2):1:1
+> ^C
+bye
+
+C:\Program Files\MongoDB\Server\5.0\bin>monge.exe
+'monge.exe' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Program Files\MongoDB\Server\5.0\bin>mongo.exe
+MongoDB shell version v5.0.6
+connecting to: mongodb://127.0.0.1:27017/?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("06f6c416-cec8-4737-9144-51a1ad924bfb") }
+MongoDB server version: 5.0.6
+================
+Warning: the "mongo" shell has been superseded by "mongosh",
+which delivers improved usability and compatibility.The "mongo" shell has been deprecated and will be removed in
+an upcoming release.
+For installation instructions, see
+https://docs.mongodb.com/mongodb-shell/install/
+================
+---
+The server generated these startup warnings when booting:
+        2022-03-07T16:53:27.308+05:30: Access control is not enabled for the database. Read and write access to data and configuration is unrestricted
+---
+---
+        Enable MongoDB's free cloud-based monitoring service, which will then receive and display
+        metrics about your deployment (disk utilization, CPU, operation statistics, etc).
+
+        The monitoring data will be available on a MongoDB website with a unique URL accessible to you
+        and anyone you share the URL with. MongoDB may use this information to make product
+        improvements and to suggest MongoDB products and deployment options to you.
+
+        To enable free monitoring, run the following command: db.enableFreeMonitoring()
+        To permanently disable this reminder, run the following command: db.disableFreeMonitoring()
+---
+> show dbs
+admin   0.000GB
+config  0.000GB
+local   0.000GB
+users   0.000GB
+> use wb-15
+switched to db wb-15
+> db
+wb-15
+> users
+uncaught exception: ReferenceError: users is not defined :
+@(shell):1:1
+> db
+wb-15
+> show collections
+> db.createCollections("user")
+uncaught exception: TypeError: db.createCollections is not a function :
+@(db.insertMany([{"first_name":"kartik","last_name":"saini","email":"sainikartik@gmail.com","age":"19])
+uncaught exception: SyntaxError: "" literal not terminated before end of script :gmail.com","age":"19"])
+@(shell):1:101y([{"first_name":"kartik","last_name":"saini","email":"sainikartik@gmail.com","age":"19"}])
+> db.insertMany([{"first_name":"kartik","last_name":"saini","email":"sainikartik@gmail.com","age":"19"},])
+> ^C
+bye
+
+C:\Program Files\MongoDB\Server\5.0\bin>mongo.exe
+MongoDB shell version v5.0.6
+connecting to: mongodb://127.0.0.1:27017/?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("5e1e9f5d-cc2d-426a-a5b0-fb93d9ea59eb") }
+MongoDB server version: 5.0.6
+================
+Warning: the "mongo" shell has been superseded by "mongosh",
+which delivers improved usability and compatibility.The "mongo" shell has been deprecated and will be removed in
+an upcoming release.
+For installation instructions, see
+https://docs.mongodb.com/mongodb-shell/install/
+================
+---
+The server generated these startup warnings when booting:
+        2022-03-07T16:53:27.308+05:30: Access control is not enabled for the database. Read and write access to data and configuration is unrestricted
+---
+---
+        Enable MongoDB's free cloud-based monitoring service, which will then receive and display
+        metrics about your deployment (disk utilization, CPU, operation statistics, etc).
+
+        The monitoring data will be available on a MongoDB website with a unique URL accessible to you
+        and anyone you share the URL with. MongoDB may use this information to make product
+        improvements and to suggest MongoDB products and deployment options to you.
+
+        To enable free monitoring, run the following command: db.enableFreeMonitoring()
+        To permanently disable this reminder, run the following command: db.disableFreeMonitoring()
+---
+> show dbs
+admin   0.000GB
+config  0.000GB
+local   0.000GB
+users   0.000GB
+wb-15   0.000GB
+> use wb-15
+switched to db wb-15
+> db
+wb-15
+> show collections
+user
+> db.user.insertMany([{"first_name":"kartik","last_name":"saini","email":"sainikartik@gmail.com","age":19}])
+{
+        "acknowledged" : true,
+        "insertedIds" : [
+                ObjectId("622628fe64065a7418cf9c98")
+        ]
+}
+> db.user.find({})
+{ "_id" : ObjectId("622628fe64065a7418cf9c98"), "first_name" : "kartik", "last_name" : "saini", "email" : "sainikartik@gmail.com", "age" : 19 }
+> db.user.insertMany([{"first_name":"Aakash","last_name":"Vish","email":"aakash@gmail.com","age":19},{"first_name":"Pablo","last_name":"Pablo","email":"pablo@gmail.com","age":26}])
+{
+        "acknowledged" : true,
+        "insertedIds" : [
+                ObjectId("62262aa064065a7418cf9c99"),
+                ObjectId("62262aa064065a7418cf9c9a")
+        ]
+}
+> db.user.find({})
+{ "_id" : ObjectId("622628fe64065a7418cf9c98"), "first_name" : "kartik", "last_name" : "saini", "email" : "sainikartik@gmail.com", "age" : 19 }
+{ "_id" : ObjectId("62262aa064065a7418cf9c99"), "first_name" : "Aakash", "last_name" : "Vish", "email" : "aakash@gmail.com", "age" : 19 }
+{ "_id" : ObjectId("62262aa064065a7418cf9c9a"), "first_name" : "Pablo", "last_name" : "Pablo", "email" : "pablo@gmail.com", "age" : 26 }
+> db.user.insertMany([{"first_name":"rampaal","last_name":"singh","email":"singh@gmail.com","age":32},{"first_name":"Rambo","last_name":"bobo","email":"rambo@gmail.com","age":23}])
+{
+        "acknowledged" : true,
+        "insertedIds" : [
+                ObjectId("62262b7864065a7418cf9c9b"),
+                ObjectId("62262b7864065a7418cf9c9c")
+        ]
+}
+> db.user.find({})
+{ "_id" : ObjectId("622628fe64065a7418cf9c98"), "first_name" : "kartik", "last_name" : "saini", "email" : "sainikartik@gmail.com", "age" : 19 }
+{ "_id" : ObjectId("62262aa064065a7418cf9c99"), "first_name" : "Aakash", "last_name" : "Vish", "email" : "aakash@gmail.com", "age" : 19 }
+{ "_id" : ObjectId("62262aa064065a7418cf9c9a"), "first_name" : "Pablo", "last_name" : "Pablo", "email" : "pablo@gmail.com", "age" : 26 }
+{ "_id" : ObjectId("62262b7864065a7418cf9c9b"), "first_name" : "rampaal", "last_name" : "singh", "email" : "singh@gmail.com", "age" : 32 }
+{ "_id" : ObjectId("62262b7864065a7418cf9c9c"), "first_name" : "Rambo", "last_name" : "bobo", "email" : "rambo@gmail.com", "age" : 23 }
+> db.user.insertMany([{"first_name":"Champa","last_name":"Chameli","email":champa@gmail.com","age":"12"},{"first_name":"Vishal","last_name":"sharma","email":"shr@gmail.com","age":"23"},{"first_name":"jay","last_name":"chopra","email":chop@gmail.com","age":22},{"first_name":"sallu","last_name":"khan","email":"khan@gmail.com","age":55},{"first_name":"varun","last_name":"dhavan","email":"dh@gmail.com","age":12}])
+uncaught exception: SyntaxError: illegal character :
+@(shell):1:79
+>  db.user.insertMany([{"first_name":"Champa","last_name":"Chameli","email":champa@gmail.com","age":"12"},{"first_name":"Vishal","last_name":"sharma","email":"shr@gmail.com","age":"23"},{"first_name":"jay","last_name":"chopra","email":"chop@gmail.com","age":22},{"first_name":"sallu","last_name":"khan","email":"khan@gmail.com","age":55},{"first_name":"varun","last_name":"dhavan","email":"dh@gmail.com","age":12}])
+uncaught exception: SyntaxError: illegal character :
+@(shell):1:79
+>  db.user.insertMany([{"first_name":"Champa","last_name":"Chameli","email":champa@gmail.com","age":"12"},{"first_name":"Vishal","last_name":"sharma","email":"shr@gmail.com","age":"23"},{"first_name":"jay","last_name":"chopra","email":"chop@gmail.com","age":22},{"first_name":"sallu","last_name":"khan","email":"khan@gmail.com","age":55},{"first_name":"varun","last_name":"dhavan","email":"dh@gmail.com","age":12}])
+uncaught exception: SyntaxError: illegal character :
+@(shell):1:79
+> db.user.insertMany([{"first_name":"Champa","last_name":"Chameli","email":"champa@gmail.com","age":"12"},{"first_name":"Vishal","last_name":"sharma","email":"shr@gmail.com","age":"23"},{"first_name":"jay","last_name":"chopra","email":"chop@gmail.com","age":22},{"first_name":"sallu","last_name":"khan","email":"khan@gmail.com","age":55},{"first_name":"varun","last_name":"dhavan","email":"dh@gmail.com","age":12}])
+{
+        "acknowledged" : true,
+        "insertedIds" : [
+                ObjectId("62262e4a64065a7418cf9c9d"),
+                ObjectId("62262e4a64065a7418cf9c9e"),
+                ObjectId("62262e4a64065a7418cf9c9f"),
+                ObjectId("62262e4a64065a7418cf9ca0"),
+                ObjectId("62262e4a64065a7418cf9ca1")
+        ]
+}
+> db.user.find({})
+{ "_id" : ObjectId("622628fe64065a7418cf9c98"), "first_name" : "kartik", "last_name" : "saini", "email" : "sainikartik@gmail.com", "age" : 19 }
+{ "_id" : ObjectId("62262aa064065a7418cf9c99"), "first_name" : "Aakash", "last_name" : "Vish", "email" : "aakash@gmail.com", "age" : 19 }
+{ "_id" : ObjectId("62262aa064065a7418cf9c9a"), "first_name" : "Pablo", "last_name" : "Pablo", "email" : "pablo@gmail.com", "age" : 26 }
+{ "_id" : ObjectId("62262b7864065a7418cf9c9b"), "first_name" : "rampaal", "last_name" : "singh", "email" : "singh@gmail.com", "age" : 32 }
+{ "_id" : ObjectId("62262b7864065a7418cf9c9c"), "first_name" : "Rambo", "last_name" : "bobo", "email" : "rambo@gmail.com", "age" : 23 }
+{ "_id" : ObjectId("62262e4a64065a7418cf9c9d"), "first_name" : "Champa", "last_name" : "Chameli", "email" : "champa@gmail.com", "age" : "12" }
+{ "_id" : ObjectId("62262e4a64065a7418cf9c9e"), "first_name" : "Vishal", "last_name" : "sharma", "email" : "shr@gmail.com", "age" : "23" }
+{ "_id" : ObjectId("62262e4a64065a7418cf9c9f"), "first_name" : "jay", "last_name" : "chopra", "email" : "chop@gmail.com", "age" : 22 }
+{ "_id" : ObjectId("62262e4a64065a7418cf9ca0"), "first_name" : "sallu", "last_name" : "khan", "email" : "khan@gmail.com", "age" : 55 }
+{ "_id" : ObjectId("62262e4a64065a7418cf9ca1"), "first_name" : "varun", "last_name" : "dhavan", "email" : "dh@gmail.com", "age" : 12 }
+> db.user.find({"name":"kartik})
+uncaught exception: SyntaxError: "" literal not terminated before end of script :
+@(shell):1:30
+> db.user.find({"name":"kartik"})
+> db.user.find({"first_name":"kartik")}
+uncaught exception: SyntaxError: missing } after property list :
+@(shell):1:35
+> db.user.find({"first_name":"kartik"})
+{ "_id" : ObjectId("622628fe64065a7418cf9c98"), "first_name" : "kartik", "last_name" : "saini", "email" : "sainikartik@gmail.com", "age" : 19 }
+> db.user.updateMany({"age":23},{$set:{"age":20}})
+{ "acknowledged" : true, "matchedCount" : 1, "modifiedCount" : 1 }
+> db.user.updateMany({"age":19},{$set:{"age":20}})
+{ "acknowledged" : true, "matchedCount" : 2, "modifiedCount" : 2 }
+>
+> db.user.find({})
+{ "_id" : ObjectId("622628fe64065a7418cf9c98"), "first_name" : "kartik", "last_name" : "saini", "email" : "sainikartik@gmail.com", "age" : 20 }
+{ "_id" : ObjectId("62262aa064065a7418cf9c99"), "first_name" : "Aakash", "last_name" : "Vish", "email" : "aakash@gmail.com", "age" : 20 }
+{ "_id" : ObjectId("62262aa064065a7418cf9c9a"), "first_name" : "Pablo", "last_name" : "Pablo", "email" : "pablo@gmail.com", "age" : 26 }
+{ "_id" : ObjectId("62262b7864065a7418cf9c9b"), "first_name" : "rampaal", "last_name" : "singh", "email" : "singh@gmail.com", "age" : 32 }
+{ "_id" : ObjectId("62262b7864065a7418cf9c9c"), "first_name" : "Rambo", "last_name" : "bobo", "email" : "rambo@gmail.com", "age" : 20 }
+{ "_id" : ObjectId("62262e4a64065a7418cf9c9d"), "first_name" : "Champa", "last_name" : "Chameli", "email" : "champa@gmail.com", "age" : "12" }
+{ "_id" : ObjectId("62262e4a64065a7418cf9c9e"), "first_name" : "Vishal", "last_name" : "sharma", "email" : "shr@gmail.com", "age" : "23" }
+{ "_id" : ObjectId("62262e4a64065a7418cf9c9f"), "first_name" : "jay", "last_name" : "chopra", "email" : "chop@gmail.com", "age" : 22 }
+{ "_id" : ObjectId("62262e4a64065a7418cf9ca0"), "first_name" : "sallu", "last_name" : "khan", "email" : "khan@gmail.com", "age" : 55 }
+{ "_id" : ObjectId("62262e4a64065a7418cf9ca1"), "first_name" : "varun", "last_name" : "dhavan", "email" : "dh@gmail.com", "age" : 12 }
+> db.user.remove({"first_name":"rampaal"},{$unset:{"last_name":"singh"}})
+WriteResult({ "nRemoved" : 1 })
+> db.user.find({})
+{ "_id" : ObjectId("622628fe64065a7418cf9c98"), "first_name" : "kartik", "last_name" : "saini", "email" : "sainikartik@gmail.com", "age" : 20 }
+{ "_id" : ObjectId("62262aa064065a7418cf9c99"), "first_name" : "Aakash", "last_name" : "Vish", "email" : "aakash@gmail.com", "age" : 20 }
+{ "_id" : ObjectId("62262aa064065a7418cf9c9a"), "first_name" : "Pablo", "last_name" : "Pablo", "email" : "pablo@gmail.com", "age" : 26 }
+{ "_id" : ObjectId("62262b7864065a7418cf9c9c"), "first_name" : "Rambo", "last_name" : "bobo", "email" : "rambo@gmail.com", "age" : 20 }
+{ "_id" : ObjectId("62262e4a64065a7418cf9c9d"), "first_name" : "Champa", "last_name" : "Chameli", "email" : "champa@gmail.com", "age" : "12" }
+{ "_id" : ObjectId("62262e4a64065a7418cf9c9e"), "first_name" : "Vishal", "last_name" : "sharma", "email" : "shr@gmail.com", "age" : "23" }
+{ "_id" : ObjectId("62262e4a64065a7418cf9c9f"), "first_name" : "jay", "last_name" : "chopra", "email" : "chop@gmail.com", "age" : 22 }
+{ "_id" : ObjectId("62262e4a64065a7418cf9ca0"), "first_name" : "sallu", "last_name" : "khan", "email" : "khan@gmail.com", "age" : 55 }
+{ "_id" : ObjectId("62262e4a64065a7418cf9ca1"), "first_name" : "varun", "last_name" : "dhavan", "email" : "dh@gmail.com", "age" : 12 }
+> db.user.find({}).pretty()
+{
+        "_id" : ObjectId("622628fe64065a7418cf9c98"),
+        "first_name" : "kartik",
+        "last_name" : "saini",
+        "email" : "sainikartik@gmail.com",
+        "age" : 20
+}
+{
+        "_id" : ObjectId("62262aa064065a7418cf9c99"),
+        "first_name" : "Aakash",
+        "last_name" : "Vish",
+        "email" : "aakash@gmail.com",
+        "age" : 20
+}
+{
+        "_id" : ObjectId("62262aa064065a7418cf9c9a"),
+        "first_name" : "Pablo",
+        "last_name" : "Pablo",
+        "email" : "pablo@gmail.com",
+        "age" : 26
+}
+{
+        "_id" : ObjectId("62262b7864065a7418cf9c9c"),
+        "first_name" : "Rambo",
+        "last_name" : "bobo",
+        "email" : "rambo@gmail.com",
+        "age" : 20
+}
+{
+        "_id" : ObjectId("62262e4a64065a7418cf9c9d"),
+        "first_name" : "Champa",
+        "last_name" : "Chameli",
+        "email" : "champa@gmail.com",
+        "age" : "12"
+}
+{
+        "_id" : ObjectId("62262e4a64065a7418cf9c9e"),
+        "first_name" : "Vishal",
+        "last_name" : "sharma",
+        "email" : "shr@gmail.com",
+        "age" : "23"
+}
+{
+        "_id" : ObjectId("62262e4a64065a7418cf9c9f"),
+        "first_name" : "jay",
+        "last_name" : "chopra",
+        "email" : "chop@gmail.com",
+        "age" : 22
+}
+{
+        "_id" : ObjectId("62262e4a64065a7418cf9ca0"),
+        "first_name" : "sallu",
+        "last_name" : "khan",
+        "email" : "khan@gmail.com",
+        "age" : 55
+}
+{
+        "_id" : ObjectId("62262e4a64065a7418cf9ca1"),
+        "first_name" : "varun",
+        "last_name" : "dhavan",
+        "email" : "dh@gmail.com",
+        "age" : 12
+}
+> dp.user.insert({"first_name" : "rampaal", "last_name" : "singh", "email" : "singh@gmail.com", "age" : 32})
+uncaught exception: ReferenceError: dp is not defined :
+@(shell):1:1
+> db.user.insert({"first_name" : "rampaal", "last_name" : "singh", "email" : "singh@gmail.com", "age" : 32})
+WriteResult({ "nInserted" : 1 })
+> db.user.find({})
+{ "_id" : ObjectId("622628fe64065a7418cf9c98"), "first_name" : "kartik", "last_name" : "saini", "email" : "sainikartik@gmail.com", "age" : 20 }
+{ "_id" : ObjectId("62262aa064065a7418cf9c99"), "first_name" : "Aakash", "last_name" : "Vish", "email" : "aakash@gmail.com", "age" : 20 }
+{ "_id" : ObjectId("62262aa064065a7418cf9c9a"), "first_name" : "Pablo", "last_name" : "Pablo", "email" : "pablo@gmail.com", "age" : 26 }
+{ "_id" : ObjectId("62262b7864065a7418cf9c9c"), "first_name" : "Rambo", "last_name" : "bobo", "email" : "rambo@gmail.com", "age" : 20 }
+{ "_id" : ObjectId("62262e4a64065a7418cf9c9d"), "first_name" : "Champa", "last_name" : "Chameli", "email" : "champa@gmail.com", "age" : "12" }
+{ "_id" : ObjectId("62262e4a64065a7418cf9c9e"), "first_name" : "Vishal", "last_name" : "sharma", "email" : "shr@gmail.com", "age" : "23" }
+{ "_id" : ObjectId("62262e4a64065a7418cf9c9f"), "first_name" : "jay", "last_name" : "chopra", "email" : "chop@gmail.com", "age" : 22 }
+{ "_id" : ObjectId("62262e4a64065a7418cf9ca0"), "first_name" : "sallu", "last_name" : "khan", "email" : "khan@gmail.com", "age" : 55 }
+{ "_id" : ObjectId("62262e4a64065a7418cf9ca1"), "first_name" : "varun", "last_name" : "dhavan", "email" : "dh@gmail.com", "age" : 12 }
+{ "_id" : ObjectId("622630a664065a7418cf9ca2"), "first_name" : "rampaal", "last_name" : "singh", "email" : "singh@gmail.com", "age" : 32 }
+> db.user.findOne({"age":20})
+{
+        "_id" : ObjectId("622628fe64065a7418cf9c98"),
+        "first_name" : "kartik",
+        "last_name" : "saini",
+        "email" : "sainikartik@gmail.com",
+        "age" : 20
+}
+> db.user.findMany({"age":20})
+uncaught exception: TypeError: db.user.findMany is not a function :
+@(shell):1:1
+> db.user.find({"age":20})
+{ "_id" : ObjectId("622628fe64065a7418cf9c98"), "first_name" : "kartik", "last_name" : "saini", "email" : "sainikartik@gmail.com", "age" : 20 }
+{ "_id" : ObjectId("62262aa064065a7418cf9c99"), "first_name" : "Aakash", "last_name" : "Vish", "email" : "aakash@gmail.com", "age" : 20 }
+{ "_id" : ObjectId("62262b7864065a7418cf9c9c"), "first_name" : "Rambo", "last_name" : "bobo", "email" : "rambo@gmail.com", "age" : 20 }
+> db.user.remove({"first_name":"rampaal"})
+WriteResult({ "nRemoved" : 1 })
+> db.user.find({})
+{ "_id" : ObjectId("622628fe64065a7418cf9c98"), "first_name" : "kartik", "last_name" : "saini", "email" : "sainikartik@gmail.com", "age" : 20 }
+{ "_id" : ObjectId("62262aa064065a7418cf9c99"), "first_name" : "Aakash", "last_name" : "Vish", "email" : "aakash@gmail.com", "age" : 20 }
+{ "_id" : ObjectId("62262aa064065a7418cf9c9a"), "first_name" : "Pablo", "last_name" : "Pablo", "email" : "pablo@gmail.com", "age" : 26 }
+{ "_id" : ObjectId("62262b7864065a7418cf9c9c"), "first_name" : "Rambo", "last_name" : "bobo", "email" : "rambo@gmail.com", "age" : 20 }
+{ "_id" : ObjectId("62262e4a64065a7418cf9c9d"), "first_name" : "Champa", "last_name" : "Chameli", "email" : "champa@gmail.com", "age" : "12" }
+{ "_id" : ObjectId("62262e4a64065a7418cf9c9e"), "first_name" : "Vishal", "last_name" : "sharma", "email" : "shr@gmail.com", "age" : "23" }
+{ "_id" : ObjectId("62262e4a64065a7418cf9c9f"), "first_name" : "jay", "last_name" : "chopra", "email" : "chop@gmail.com", "age" : 22 }
+{ "_id" : ObjectId("62262e4a64065a7418cf9ca0"), "first_name" : "sallu", "last_name" : "khan", "email" : "khan@gmail.com", "age" : 55 }
+{ "_id" : ObjectId("62262e4a64065a7418cf9ca1"), "first_name" : "varun", "last_name" : "dhavan", "email" : "dh@gmail.com", "age" : 12 }
+> db.user.deleteMany({"age":20})
+{ "acknowledged" : true, "deletedCount" : 3 }
+> db.user.find({})
+{ "_id" : ObjectId("62262aa064065a7418cf9c9a"), "first_name" : "Pablo", "last_name" : "Pablo", "email" : "pablo@gmail.com", "age" : 26 }
+{ "_id" : ObjectId("62262e4a64065a7418cf9c9d"), "first_name" : "Champa", "last_name" : "Chameli", "email" : "champa@gmail.com", "age" : "12" }
+{ "_id" : ObjectId("62262e4a64065a7418cf9c9e"), "first_name" : "Vishal", "last_name" : "sharma", "email" : "shr@gmail.com", "age" : "23" }
+{ "_id" : ObjectId("62262e4a64065a7418cf9c9f"), "first_name" : "jay", "last_name" : "chopra", "email" : "chop@gmail.com", "age" : 22 }
+{ "_id" : ObjectId("62262e4a64065a7418cf9ca0"), "first_name" : "sallu", "last_name" : "khan", "email" : "khan@gmail.com", "age" : 55 }
+{ "_id" : ObjectId("62262e4a64065a7418cf9ca1"), "first_name" : "varun", "last_name" : "dhavan", "email" : "dh@gmail.com", "age" : 12 }
+> db.user.deleteOne({"age":12})
+{ "acknowledged" : true, "deletedCount" : 1 }
+> db.user.find({})
+{ "_id" : ObjectId("62262aa064065a7418cf9c9a"), "first_name" : "Pablo", "last_name" : "Pablo", "email" : "pablo@gmail.com", "age" : 26 }
+{ "_id" : ObjectId("62262e4a64065a7418cf9c9d"), "first_name" : "Champa", "last_name" : "Chameli", "email" : "champa@gmail.com", "age" : "12" }
+{ "_id" : ObjectId("62262e4a64065a7418cf9c9e"), "first_name" : "Vishal", "last_name" : "sharma", "email" : "shr@gmail.com", "age" : "23" }
+{ "_id" : ObjectId("62262e4a64065a7418cf9c9f"), "first_name" : "jay", "last_name" : "chopra", "email" : "chop@gmail.com", "age" : 22 }
+{ "_id" : ObjectId("62262e4a64065a7418cf9ca0"), "first_name" : "sallu", "last_name" : "khan", "email" : "khan@gmail.com", "age" : 55 }
+> db.dropDatabase()
+{ "ok" : 1 }
+
+>
